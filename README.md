@@ -1,47 +1,29 @@
-# DesafioTW
+# Desafio Técnico - TW Transportes (Gestão Logística)
 
-Este repositório contém uma aplicação **React Native com Expo** desenvolvida como teste técnico para recrutamento de desenvolvedores.
+Este projeto é uma aplicação mobile desenvolvida em **React Native com Expo** para o gerenciamento de clientes e serviços logísticos.
 
-O desafio consiste em **criar uma tela de produtos** e implementar a lógica para **adicionar produtos vinculados a clientes**, utilizando persistência local com **SQLite** através do **Drizzle ORM**.
+## 🚀 Implementações Realizadas
+Além da estrutura base de clientes, foram implementadas as seguintes funcionalidades:
+- **Módulo de Produtos:** Criação de uma nova entidade para gerenciar serviços/cargas.
+- **Vínculo de Dados:** Implementação de relacionamento (Foreign Key) entre Produtos e Clientes usando **Drizzle ORM**.
+- **Dashboard Home:** Tela inicial dinâmica que exibe o resumo estatístico da operação em tempo real.
+- **Persistência Local:** Configuração completa do **SQLite** para funcionamento offline.
 
----
+## 🛠️ Tecnologias Utilizadas
+- **Framework:** Expo (SDK 54)
+- **Linguagem:** TypeScript
+- **Banco de Dados:** SQLite + Drizzle ORM
+- **Estado Global:** Redux Toolkit
+- **Formulários:** React Hook Form + Yup
+- **Navegação:** Expo Router (File-based)
 
-## Tecnologias Utilizadas
+## 📦 Como Rodar o Projeto
+1. Instale as dependências:
+   ```bash
+   npm install
+2.Inicie o prebuild nativo:
+    npx expo prebuild
+ 
+ 3.Execute no emulador Android:
+    npx expo run:android
 
-- [Expo](https://expo.dev/)
-- [React Native](https://reactnative.dev/)
-- [SQLite](https://docs.expo.dev/versions/latest/sdk/sqlite/)
-- [Drizzle ORM](https://orm.drizzle.team/)
-- [TypeScript](https://www.typescriptlang.org/)
-
----
-
-## Pré-requisitos
-
-- Node.js **22+**
-- Yarn
-- Ambiente configurado para rodar aplicações React Native (Android Studio / Emulador ou dispositivo físico com USB Debug habilitado)
-
----
-
-## Instalação
-
-instale as dependências:
-
-```bash
-yarn
-```
-
-## Rodando aplicação
-
-faça prebuild da aplicação
-
-```bash
-npx expo prebuild
-```
-
-roda a aplicação
-
-```bash
-yarn start
-```
